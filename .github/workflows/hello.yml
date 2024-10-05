@@ -1,7 +1,7 @@
 name : hello
 
 on:
-  push:
+  # push:
   workflow_dispatch: 
     inputs:
       greeting:
@@ -14,4 +14,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{inputs.greeting}}"
-      
